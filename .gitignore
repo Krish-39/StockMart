@@ -1,0 +1,20 @@
+# Local API config and credentials
+/web/js/config.local.js
+.env
+.env.*
+!.env.example
+
+# Flutter generated files
+/mobile/.dart_tool/
+/mobile/build/
+/mobile/.flutter-plugins-dependencies
+/mobile/**/.gradle/
+/mobile/**/Pods/
+/mobile/android/local.properties
+/mobile/ios/Flutter/ephemeral/
+/mobile/macos/Flutter/ephemeral/
+/mobile/**/*.iml
+/mobile/**/.idea/
+
+# Editor and OS files
+.DS_Store

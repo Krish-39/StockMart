@@ -1,0 +1,4 @@
+window.STOCKMART_API_CONFIG = {
+  FINNHUB_API_KEY: "",
+  ALPHA_VANTAGE_API_KEY: "",
+};

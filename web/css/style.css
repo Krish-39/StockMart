@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+
+    --bg:#0A1020;
+    --card:#12182B;
+    --green:#00C853;
+    --green-hover:#00b248;
+    --white:#ffffff;
+   --muted:#C7CDD8;
+    --border:#1C2336;
+
+}
+
+/* ===========================
+   Global
+=========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+    color:var(--white);
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+img{
+
+    max-width:100%;
+
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+
+    background:var(--card);
+
+    padding:14px 0;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:white !important;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:18px;
+
+    font-weight:500;
+
+    transition:.25s;
+
+}
+
+.nav-link:hover{
+
+    color:var(--green)!important;
+
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+
+    padding:90px 0;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:58px;
+
+    font-weight:700;
+
+}
+
+.hero p{
+
+    margin-top:18px;
+
+    color:var(--muted);
+
+    font-size:20px;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn-success{
+
+    background:var(--green);
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:13px 34px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-success:hover{
+
+    background:var(--green-hover);
+
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+section{
+
+    margin-top:70px;
+
+}
+
+.section-title{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+   Portfolio Card
+=========================== */
+
+.portfolio-card{
+
+    background:var(--card);
+
+    border-radius:24px;
+
+    padding:30px;
+
+    border:1px solid var(--border);
+
+}
+
+.portfolio-card h5{
+
+    color:var(--muted);
+
+}
+
+.portfolio-card h1{
+
+    margin:12px 0;
+
+    font-size:48px;
+
+}
+
+.portfolio-card .badge{
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.card{
+
+    background:var(--card);
+
+    color:white;
+
+    border:none;
+
+    border-radius:22px;
+
+    transition:.25s;
+
+    overflow:hidden;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+   Forms
+=========================== */
+
+.form-control{
+
+    background:#182037;
+
+    border:1px solid var(--border);
+
+    color:white;
+
+}
+
+.form-control:focus{
+
+    background:#182037;
+
+    color:white;
+
+    border-color:var(--green);
+
+    box-shadow:none;
+
+}
+
+.form-select{
+
+    background:#182037;
+
+    color:white;
+
+    border:1px solid var(--border);
+
+}
+
+/* ===========================
+   Tables
+=========================== */
+
+.table{
+
+    color:white;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    margin-top:80px;
+
+    padding:30px;
+
+    background:var(--card);
+
+    border-top:1px solid var(--border);
+
+    text-align:center;
+
+    color:var(--muted);
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+
+padding:70px 20px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.portfolio-card h1{
+
+font-size:36px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.navbar-brand{
+
+font-size:22px;
+
+}
+
+.section-title{
+
+font-size:24px;
+
+}
+
+}
+
+/* ===========================
+   Markets
+=========================== */
+
+.search-box{
+
+    height:55px;
+
+    border-radius:14px;
+
+}
+
+.stock-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:22px;
+
+    height:100%;
+
+    transition:.3s;
+
+    color:white;
+
+    overflow:hidden;
+
+}
+
+.stock-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.stock-logo{
+
+    width:60px;
+    height:60px;
+
+    object-fit:contain;
+
+    background:transparent;
+
+    padding:0;
+
+    border-radius:0;
+
+    display:block;
+
+    flex-shrink:0;
+
+}
+
+.stock-card h5{
+
+    font-size:20px;
+
+    font-weight:600;
+
+    margin-bottom:2px;
+
+    color:white;
+
+}
+
+.stock-card small{
+
+    color:var(--muted);
+
+}
+
+.stock-card hr{
+
+    border-color:var(--border);
+
+    margin:18px 0;
+
+}
+
+.stock-card h3{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin:0;
+
+}
+
+.up{
+
+    color:#00C853;
+
+    font-weight:700;
+
+    font-size:20px;
+
+}
+
+.down{
+
+    color:#ff5252;
+
+    font-weight:700;
+
+    font-size:20px;
+
+}
+
+/* ==========================
+   Company News
+========================== */
+
+.news-card{
+
+    background:#161d31;
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:20px;
+
+    transition:.3s;
+
+}
+
+.news-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.news-card h5{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:white;
+
+}
+
+.news-card p{
+
+    color:var(--muted);
+
+    margin:12px 0;
+
+}
+
+.news-card a{
+
+    color:var(--green);
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .stock-card{
+
+        padding:18px;
+
+    }
+
+    .stock-card h3{
+
+        font-size:28px;
+
+    }
+
+    .stock-card img{
+
+        width:50px;
+
+        height:50px;
+
+    }
+
+}
+
+/* ==========================
+   Chart Buttons
+========================== */
+
+.chart-btn{
+
+    color:white;
+    border-color:#30364a;
+
+}
+
+.chart-btn:hover{
+
+    background:#00C853;
+    border-color:#00C853;
+
+}
+
+.chart-btn.active{
+
+    background:#00C853;
+    border-color:#00C853;
+}
+
+#stockChart{
+
+    width:100% !important;
+
+    height:420px !important;
+
+}
+
+/* ==========================
+   Sticky Buy Bar
+========================== */
+
+.buy-bar{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#12182B;
+
+    border-top:1px solid var(--border);
+
+    padding:15px;
+
+    z-index:999;
+
+    box-shadow:0 -8px 20px rgba(0,0,0,.35);
+
+}
+
+.buy-bar .btn{
+
+    height:55px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    border-radius:14px;
+
+}
+
+/* Prevent footer/content from being hidden behind the sticky bar */
+
+body{
+
+    padding-bottom:90px;
+
+}
+
+#portfolioChart{
+
+    max-height:420px;
+
+}
+
+/* ===========================
+   Pro Page
+=========================== */
+
+.table-dark{
+
+    border-color: var(--border);
+
+}
+
+.table-dark td,
+.table-dark th{
+
+    padding:18px;
+
+}
+
+.accordion-item{
+
+    border:1px solid var(--border);
+
+    margin-bottom:12px;
+
+}
+
+.accordion-button:not(.collapsed){
+
+    background:#1b2338;
+
+    color:white;
+
+}
+
+.accordion-button:focus{
+
+    box-shadow:none;
+
+}
+
+.accordion-button::after{
+
+    filter:invert(1);
+
+}
+
+/* ===========================
+   Global Text Colors
+=========================== */
+
+.text-muted{
+
+    color:var(--muted)!important;
+
+}
+
+p{
+
+    color:var(--muted);
+
+}
+
+small{
+
+    color:var(--muted);
+
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.navbar-logo{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:14px;
+
+    object-fit:cover;
+
+}
+
+.navbar-brand small{
+
+    display:block;
+
+    color:var(--muted);
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
